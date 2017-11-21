@@ -2,7 +2,7 @@
 The recommendation system lab exercises, including three TPs. I and my friend Safa, we two finished them together.
 The TPs questions are as follows:
 
-# TP1, user-user collaborative filter recommendations and item-item
+### TP1, user-user collaborative filter recommendations and item-item
 TP1 deals with film recommendations with data from GroupLens (1).
 You must apply the algorithms seen in the courses to answer the following points:
 
@@ -14,7 +14,7 @@ You must apply the algorithms seen in the courses to answer the following points
 6. I am a new user. You know my profession, my sex and my age. Develop a Bayesian algorithm to recommend 10 movies based on these three categories. 
 
 
-# TP2. Graphing techniques 
+### TP2. Graphing techniques 
 The first question is about recommendations for data represented in the form of a directed graph, for example recommending articles to read using the reference graph. The recommendations will be based on a matrix that indicates which article refers to which other.
 
 A list of 1090 references was extracted from the Citeseer database for the exercise of the TP. A referencing matrix indicating who refers to who was created to facilitate the analysis. For the purpose of this exercise, references outside the 1090 items are not indicated (an article usually refers to other articles outside this set as well). The instructions for downloading the data are provided below.
@@ -26,7 +26,7 @@ Work to do :
 3. Use cross-validation to evaluate the performance of the item-item approach. 
 
 
-# Work to do for TP3 
+### Work to do for TP3 
 Use the votes from the u.dataTP 1 matrix to replicate the experiment described in section 3.1.1 of Sarwar et al. 2000 ( local version ).
 
 1. Determine a point of comparison for the forecast of votes (a minimum performance)
