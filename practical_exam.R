@@ -93,7 +93,7 @@ sim.replis <- function(m.v, ndim, test.i) {
   m.train.imp[is.na(m.train)] <- m.train.baseline[is.na(m.train)]
   m.train.imp.rowm <- rowMeans(m.train.imp)
   m.train.svd <- svd(m.train.imp - m.train.imp.rowm)
-  ## it¨¦rations sur les dimensions fournies
+  ## itÂ¨Â¦rations sur les dimensions fournies
   res.est <- sapply(ndim, function(i) {
     m.est <- m.train.svd$u[,1:i] %*% diag(m.train.svd$d[1:i]) %*% t(m.train.svd$v[,1:i]) + m.train.imp.rowm
     mean(abs(m.est[test.i] - m.v[test.i]), na.rm=T)
@@ -132,10 +132,10 @@ v2 <- as.matrix(v2)
 Q8.sqrt <-sqrt(sum((v2-v)^2 / 200, na.rm=T)) 
 print(Q8.sqrt)
 #compute RMSE of Q9
-dim<-200
+dim<-3
 Sprime<-diag(c(S[1:200],rep(0, length(S)-dim)))
-Rsvd.200dimens<-rowMeans(R, na.rm=TRUE)+ U %*% Sprime %*% t(V)
-Q9.Sqrt<-sqrt(mean((Rsvd.200dimens - R)^2, na.rm=T))
+Rsvd.3dimens<-rowMeans(R, na.rm=TRUE)+ U %*% Sprime %*% t(V)
+Q9.Sqrt<-sqrt(mean((Rsvd.3dimens - R)^2, na.rm=T))
 print(Q9.Sqrt)
 ##compute RMSE of Q10
 Q10.Sqrt <- sqrt(mean((predict.ui - origin.ui)^2, na.rm=T))
