@@ -1,6 +1,6 @@
 # lab_exe_RS
 The recommendation system lab exercises, including three TPs. I and my friend Safa, we two finished them together.
-The TPs questions are as follows:
+The TPs questions are below. I revised our TPs with the solution that the Professor Michel gave us. Finally, the Recommendation System course includes one practical exam, I did it and also uploaded the sample exam code.
 
 ### TP1, user-user collaborative filter recommendations and item-item
 TP1 deals with film recommendations with data from GroupLens (1).
